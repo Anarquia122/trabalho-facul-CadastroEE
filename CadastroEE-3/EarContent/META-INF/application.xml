@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+  xmlns="https://java.sun.com/xml/ns/javaee"
+  xsi:schemaLocation="https://java.sun.com/xml/ns/javaee
+  https://xmlns.jcp.org/xml/ns/javaee/application_10.xsd"
+  id="Application_ID" version="10">
+  <display-name>CadastroEE-3</display-name>
+  <module>
+    <ejb>CadastroEE-3-ejb.jar</ejb>
+  </module>
+  <module>
+    <web>
+      <web-uri>CadastroEE-3-war-0.0.1-SNAPSHOT.war</web-uri>
+      <context-root>CadastroEE-3-war</context-root>
+    </web>
+  </module>
+</application>

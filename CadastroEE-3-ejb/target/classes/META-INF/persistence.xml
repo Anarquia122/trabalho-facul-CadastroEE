@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.2"
+    xmlns="https://jakarta.ee/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+    file:///C:\Users\italo\eclipse-workspace-web\CadastroEE-3-ejb\build\classes\META-INF\persistence_3_2.xsd">
+    <persistence-unit name="CadastroEE-3-ejb" transaction-type="JTA">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>java:/PostgresDS</jta-data-source>
+        <class>cadastroee.model.Movimento</class>
+        <class>cadastroee.model.Pessoa</class>
+        <class>cadastroee.model.Pessoafisica</class>
+        <class>cadastroee.model.Pessoajuridica</class>
+        <class>cadastroee.model.Produto</class>
+        <class>cadastroee.model.Usuario</class>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
